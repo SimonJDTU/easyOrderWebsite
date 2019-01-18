@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width">
+	<title>easyOrder | Ordre oversigt</title>
+
+	<!--Main stylesheet-->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<header>
+		<div class="container">
+			<div id="branding">
+				<h1>easyOrder</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Hjem</a></li>
+					<li class="current"><a href="ordre.html">Oversigt</a></li>
+					<li><a href="faerdig.html">Færdige ordrer</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+ <table>
+  <thead>
+    <tr>
+      <th>Færdig</th>
+      <th>Ordre ID</th>
+      <th>Smørrebrød</th>
+    </tr>
+  </thead>
+  <tbody id="table_body">
+  </tbody>
+</table>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAeh8UFKCKH6_xmqgz83pHqshflClf_ZeU",
+	    authDomain: "easy-order-f50b3.firebaseapp.com",
+	    databaseURL: "https://easy-order-f50b3.firebaseio.com",
+	    projectId: "easy-order-f50b3",
+	    storageBucket: "easy-order-f50b3.appspot.com",
+	    messagingSenderId: "464593685648"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+	<script src="./js/index.js"></script>
+
+</body>
+</html>
